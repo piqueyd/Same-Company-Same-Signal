@@ -1,4 +1,4 @@
-# Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts
+# Same Company, Same Signal
 
 This repository is dedicated to the research paper: "Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts." 
 
