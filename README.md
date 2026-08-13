@@ -1,6 +1,6 @@
 # Same Company, Same Signal
 
-This repository is dedicated to the paper: ["Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts."](https://arxiv.org/abs/2412.18029) 
+This repository is dedicated to the paper: ["Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts"](https://aclanthology.org/2025.findings-acl.946/) (Findings of ACL 2025). A preprint is also available on [arXiv](https://arxiv.org/abs/2412.18029).
 
 ## Abstract
 Post-earnings volatility prediction is critical for investors, with previous works often leveraging earnings call transcripts under the assumption that their rich semantics contribute significantly. To further investigate how transcripts impact volatility, we introduce DEC, a dataset featuring accurate volatility calculations enabled by the previously overlooked beforeAfterMarket attribute and dense ticker coverage. Unlike established benchmarks, where each ticker has only around two earnings, DEC provides 20 earnings records per ticker. 
@@ -24,6 +24,8 @@ We also provide three types of embeddings for reproducing experiments:
    
 Embedding-level analysis can be found in `SS.ipynb`.
 
+DEC is released for academic research use. Please see [License](#license) below before redistributing or building on the dataset.
+
 ## Code Organization
 ```text
 Same Company, Same Signal/
@@ -43,6 +45,23 @@ bash ./scripts/TMLP_DEC.sh
 bash ./scripts/TSMixer_DEC.sh
 ```
 
+## License
+
+This project is released under two separate licenses.
+
+**Code** — everything in this repository — is licensed under the MIT License. See [`LICENSE`](LICENSE).
+
+**The DEC dataset** is split by origin, because it combines our own work with transcript text authored by third parties. Full terms are in [`LICENSE-DATA`](LICENSE-DATA); in summary:
+
+| Component | Terms |
+|---|---|
+| Volatility calculations, `beforeAfterMarket` annotations, ticker/earnings selection, splits, metadata, embeddings, and `DEC.json` structure | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — free to share and adapt with attribution |
+| Earnings call transcript text (`DEC/*.txt`, transcript fields of `DEC.json`) | Third-party material collected from publicly accessible sources. Copyright remains with the respective owners; we make no copyright grant over it and provide it to support academic research and reproduction of our results. |
+
+**Using DEC in academic work — including unpublished theses, dissertations, and postgraduate research reports — is permitted.** Please cite the paper below. If you intend to redistribute the transcript text or use it commercially, you are responsible for obtaining any permissions required.
+
+Rights holders with concerns about specific material may contact dyu18@ur.rochester.edu and it will be removed.
+
 ## Acknowledgements
 
 We would like to express our gratitude to the following projects and contributors:
@@ -55,14 +74,18 @@ We would like to express our gratitude to the following projects and contributor
 ## Citation
 If you use our research, code, or dataset in your work, please cite our paper. 
 ```bibtex
-@misc{yu2024companysignalroleidentity,
-      title={Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts}, 
-      author={Ding Yu and Zhuo Liu and Hangfeng He},
-      year={2024},
-      eprint={2412.18029},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2412.18029}, 
+@inproceedings{yu-etal-2025-company,
+    title = "Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts",
+    author = "Yu, Ding  and
+      Liu, Zhuo  and
+      He, Hangfeng",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.946/",
+    pages = "18403--18422",
 }
 ```
 
