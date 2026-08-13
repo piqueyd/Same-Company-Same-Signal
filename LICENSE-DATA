@@ -1,0 +1,71 @@
+DEC (Dense Earnings Call) Dataset — License
+===========================================
+
+Copyright (c) 2025 Ding Yu, Zhuo Liu, and Hangfeng He
+
+DEC combines original material created by the authors with earnings call
+transcript text authored by third parties. The two are licensed differently.
+
+
+1. AUTHORS' ORIGINAL CONTRIBUTIONS — CC BY 4.0
+----------------------------------------------
+The following are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0):
+
+  * Post-earnings volatility calculations and all derived price/return values
+  * The beforeAfterMarket annotations
+  * Ticker selection, earnings-record selection, and dataset organisation
+  * Train/validation/test splits and all accompanying metadata
+  * The precomputed embeddings (OpenAI Vanilla Transcripts, Random Ticker,
+    Random All)
+  * The structure and schema of DEC.json
+
+You are free to share and adapt this material, including commercially, provided
+you give appropriate credit, link to the license, and indicate if changes were
+made.
+
+  Summary:   https://creativecommons.org/licenses/by/4.0/
+  Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+
+2. EARNINGS CALL TRANSCRIPT TEXT — THIRD-PARTY MATERIAL
+-------------------------------------------------------
+The transcript text distributed in DEC/*.txt and within DEC.json was collected
+from publicly accessible sources. Copyright in that text is held by its
+respective owners (the issuing companies and/or the transcript providers), not
+by the authors of DEC.
+
+The authors make no copyright grant over this text and cannot license it to
+you. It is made available solely to support academic research and the
+reproduction of the results reported in the accompanying paper.
+
+If you intend to redistribute the transcript text, or to use it for commercial
+purposes, you are responsible for determining what permissions you require and
+for obtaining them. If you are a rights holder and object to the inclusion of
+specific material, please contact dyu18@ur.rochester.edu and it will be
+removed.
+
+
+3. CODE
+-------
+Code in the accompanying GitHub repository is licensed separately under the MIT
+License. See LICENSE in that repository.
+
+
+ATTRIBUTION
+-----------
+Appropriate credit under CC BY 4.0 is satisfied by citing:
+
+  Ding Yu, Zhuo Liu, and Hangfeng He. 2025. Same Company, Same Signal: The Role
+  of Identity in Earnings Call Transcripts. In Findings of the Association for
+  Computational Linguistics: ACL 2025, pages 18403-18422, Vienna, Austria.
+  Association for Computational Linguistics.
+  https://aclanthology.org/2025.findings-acl.946/
+
+
+DISCLAIMER
+----------
+DEC is provided "as is", without warranty of any kind, express or implied. It
+is released for research purposes and is not investment advice. The authors
+accept no liability for any claim, damages, or other liability arising from use
+of the dataset.

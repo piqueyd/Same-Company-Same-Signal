@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or the DEC dataset, please cite the paper below."
+title: "Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts"
+authors:
+  - family-names: "Yu"
+    given-names: "Ding"
+  - family-names: "Liu"
+    given-names: "Zhuo"
+  - family-names: "He"
+    given-names: "Hangfeng"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Same Company, Same Signal: The Role of Identity in Earnings Call Transcripts"
+  authors:
+    - family-names: "Yu"
+      given-names: "Ding"
+    - family-names: "Liu"
+      given-names: "Zhuo"
+    - family-names: "He"
+      given-names: "Hangfeng"
+  collection-title: "Findings of the Association for Computational Linguistics: ACL 2025"
+  publisher:
+    name: "Association for Computational Linguistics"
+  conference:
+    name: "Findings of the Association for Computational Linguistics: ACL 2025"
+    city: "Vienna"
+    country: "AT"
+  year: 2025
+  month: 7
+  start: 18403
+  end: 18422
+  url: "https://aclanthology.org/2025.findings-acl.946/"
